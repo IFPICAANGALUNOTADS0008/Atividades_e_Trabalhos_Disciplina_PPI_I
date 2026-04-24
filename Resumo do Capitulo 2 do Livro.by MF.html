@@ -1,0 +1,165 @@
+<!DOCTYPE Html>
+<html>
+  <head>
+    <title> Resumo do Capitulo 2 do Livro </title>
+  </head>
+  <body>
+    <h1> Estruturando Páginas Web com HTML </h1>
+    <section>
+      <h2> O Que é HTML? </h2> 
+        <ul>
+          <li> É uma das linguagens mais importantes dentro  do Frontend. </li>
+          <li> Ela é usada para estruturar páginas web, definido o significado e a semântica de elementos e objetos dentro de um documento HTML. </li>
+          <li> Foi lançada em 1992, mas foi originalmente conceituada em 1989 pelo físico e cientista computacional, <b>Tim Berners-Lee</b>. Sua versão atual é o <b>HTML5</b>, lançada em 2014.</li>
+        </ul>
+    </section>
+    <section>
+      <h2> Estrutura Básica </h2> 
+          A escrita básica do HTML é feita através de:
+          <ul>
+            <li><b>Elementos</b>: Pares de palavras ou letras individuais, que marcam e limitam onde cada objeto da página web dever estar. É usado a tag de abertura, <b>&ltpalavra ou letra&gt</b>, para marcar o inicio e a tag de fechameneto, <b>&lt/palavra ou letra&gt</b>, para marcar o fim da localização de um objeto.</li> 
+            <li><b>Atributos</b>: Informações adicionais colocadas  dentro de elementos, por exemplo, links para ir a outra página web, parâmetros de tamanhos de quadros ou definição de tipos de dados.</li>
+          </ul>
+           A estrutura básica de uma página web:
+           <pre>
+             &lt;!DOCTYPE html&gt;
+             &lt;html&gt;
+               &lt;head&gt;
+                 &lt;title&gt;Título da página&lt;/title&gt;
+               &lt;/head&gt;
+               &lt;body&gt;
+                 &lt;p&gt;
+                 Conteúdo da página
+                 &lt;/p&gt;
+               &lt;/body&gt;
+             &lt;/html&gt;
+           </pre>
+          Função de cada acima tag:
+            <ul>
+              <li><b>!DOCTYPE html</b>: Indentifica a versão do HTML usado para escrever o documento.</li>
+              <li><b>html e /html</b>: Sinalizam o inicio e fim do documento HTML.</li>
+              <li><b>head e /head</b>: Marcam o cabeçalho da página. Dentro dele é colocado o titulo da página, que aparece acima da barra de URL de alguns navegadores, metadados, entre outras coisas.</li>
+              <li><b>title e /title</b>: Usado para marcar o titulo de uma página. </li>
+              <li><b>body e /body</b>: Marcam o corpo da página. Entre eles ficam tudo aquilo que é visível no navegador.</li>
+              <li><b>p e /p</b>: Demarcam o inicio e o fim de um parágrafo.</li>
+           </ul>
+    </section>
+    <section>
+      <h2> Elementos de Uso Diário </h2>
+        A seguir será mostrado os elementos normalmente usados e mais importantes dentro da linguagem HTML.
+          <h3>## Listas </h3>
+            <p> Há três tipos de listas no HTML, sendo elas:</p>
+              <dl>
+                <dt><b>Listas Ordenadas</b></dt>
+                  <dd> 
+                    Nela cada objeto recebe uma numeração para indicar sua ordem. Ela é marcada pelos elementos <b>&ltol&gt</b> e <b>&lt/ol&gt</b> pra delimitar seu espaço, junto com <b>&ltli&gt</b> e <b>&lt/li&gt. p</b> para indica onde cada item da lista deve ficar. Exemplo da estrutura:</dd>
+                        <pre>
+                          &lt;ol&gt;
+                            &lt;li&gt;Primeiro passo&lt;/li&gt;
+                            &lt;li&gt;Segundo passo&lt;/li&gt;
+                            &lt;li&gt;Terceiro passo&lt;/li&gt;
+                          &lt;/ol&gt;
+                        </pre>
+                   <dt><b>Listas Não Ordenadas</b></dt>
+                       <dd>Usada quando não há uma ordem fixa de objetos, sendo sinalizadas por uma bola preta. É feita pelas tags <b>&ltul&gt</b> e <b>&lt/ul&gt</b>, para marcar seu espaço, e <b>&ltli&gt</b> com <b>&lt/li&gt</b> para sinalizar a localização de cada item.Exemplo:</dd>
+             
+            <pre>
+              &lt;ul&gt;
+                &lt;li&gt;HTML&lt;/li&gt;
+                &lt;li&gt;CSS&lt;/li&gt;
+                &lt;li&gt;JavaScript&lt;/li&gt;
+              &lt;/ul&gt;
+            </pre> 
+                   <dt><b>Listas para definiçôes</b></dt>
+                     <dd>Usada quando temos que estabelecer definições de coisas. Suas tags são <b>&ltdl&gt</b> e <b>&lt/dl&gt</b>, para delimitar seu espaço, 
+<b>&ltdt&gt</b> e <b>&lt/dt&gt</b> para indicar um termo e <b>&ltdd&gt</b> e <b>&lt/dd&gt</b> para fixar a descrição do termo.Exemplo:</dd>
+            <pre>
+              &lt;dl&gt;
+                &lt;dt&gt;HTML&lt;/dt&gt;
+                &lt;dd&gt;Linguagem de marcação&lt;/dd&gt;
+                &lt;dt&gt;CSS&lt;/dt&gt;
+                &lt;dd&gt;Responsável pelo estilo&lt;/dd&gt;
+              &lt;/dl&gt;
+             </pre>
+            <h3> ##Links </h3>
+              <p>
+              Links são usados para conectar páginas entre si. Eles permitem que o usuário navegue entre diferentes conteúdos na web.
+              </p>
+              <p>
+              Para criar um link, utilizamos a tag &lt;a&gt;, junto com o atributo <b>href</b>, que indica o destino do link.
+              </p>
+              <p>Exemplo:</p>
+              <pre>
+              &lt;a href="https://www.exemplo.com"&gt;Acessar site&lt;/a&gt;
+              </pre>
+              <p>
+              O texto entre a abertura e fechamento da tag é o que será clicável.
+              </p>
+            <h3>##Imagens</h3>
+              <p>
+                As imagens são usadas para exibir conteúdo visual dentro da página.
+              </p>
+              <p>
+                Para inserir uma imagem, usamos a tag &lt;img&gt;. Essa tag não possui fechamento, sendo controlada apenas por atributos.
+              </p>
+                <ul>
+                  <li><b>src</b>: caminho da imagem</li>
+                  <li><b>alt</b>: descrição da imagem</li>
+                </ul>
+              <p>Exemplo:</p>
+              <pre>
+                &lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;
+              </pre>
+            <h3>##Tabelas</h3>
+              <p>
+              Tabelas são usadas para organizar dados em linhas e colunas.
+              </p>
+              <p>
+                As principais tags são:
+              </p>
+                <ul>
+                  <li><b>&lt;table&gt;</b>: define a tabela</li>
+                  <li><b>&lt;tr&gt;</b>: define uma linha</li>
+                  <li><b>&lt;td&gt;</b>: define uma célula</li>
+                  <li><b>&lt;th&gt;</b>: define um cabeçalho</li>
+                </ul>
+              <p>Exemplo:</p>
+                <pre>
+                  &lt;table&gt;
+                    &lt;tr&gt;
+                      &lt;th&gt;Nome&lt;/th&gt;
+                      &lt;th&gt;Idade&lt;/th&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                      &lt;td&gt;João&lt;/td&gt;
+                      &lt;td&gt;20&lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+               </pre>
+          <h3>##Formulários</h3>
+            <p>
+              Formulários são usados para coletar dados do usuário, como login, cadastro ou pesquisas.
+            </p>
+            <p>
+              A estrutura principal é feita com a tag &lt;form&gt;.
+            </p>
+            <p>
+              Dentro dela, podemos usar diferentes tipos de entrada:
+            </p>
+              <ul>
+                <li>Campos de texto</li>
+                <li>Senhas</li>
+                <li>Botões</li>
+                <li>Caixas de seleção</li>
+              </ul>
+             <p>Exemplo:</p>
+               <pre>
+               &lt;form&gt;
+                 &lt;input type="text" placeholder="Nome"&gt;
+                 &lt;input type="password" placeholder="Senha"&gt;
+                 &lt;input type="submit" value="Enviar"&gt;
+               &lt;/form&gt;
+               </pre>
+    </section>
+  </body>
+</html>
