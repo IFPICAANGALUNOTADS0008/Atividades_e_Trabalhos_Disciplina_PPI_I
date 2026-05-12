@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Resumo do Capítulo 3</title>
+    <link href="css/css.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Resumo do Capítulo 3: Designing Web Pages with CSS</h1>
+        <p>O Capítulo 3 apresentou os fundamentos do CSS (Cascading Style Sheets), linguagem utilizada para definir a aparência visual de páginas HTML. Enquanto o HTML cria a estrutura e o conteúdo da página, o CSS é responsável pelo estilo, cores, posicionamento, alinhamento e organização visual dos elementos.</p>
+        <p>O CSS funciona através de regras compostas por:</p>
+          <ul>
+            <li>selectors (seletores);</li>
+            <li>properties (propriedades);</li>
+            <li>values (valores).</li>
+          </ul>
+        <p> Exemplo da estrutura de um comando CSS:</p>
+          <pre class="exemplo">
+          seletor {propiedade: valor;}
+          h1 {color: #ffffff;}
+          </pre>
+        <p>Os seletores definem quais elementos HTML serão estilizados. Existem diferentes tipos de seletores:</p>
+          <ul>
+            <li>seletores de elementos (p, h1, div);</li>
+            <li>seletores de classe (.menu);</li>
+            <li>seletores de ID (#header);</li>
+            <li>pseudo-classes (:hover, :focus);</li>
+            <li>pseudo-elements (::before, ::after).</li>.
+          </ul>
+        <p>As pseudo-classes selecionam elementos em determinados estados ou condições, como quando o mouse passa sobre um link (:hover) ou quando um campo recebe foco (:focus). Já os pseudo-elements permitem selecionar partes específicas de um elemento ou criar conteúdo visual antes ou depois dele.</p>
+        <p>O capítulo também apresentou o conceito de <b>specificity (especificidade)</b>, mecanismo usado pelo navegador para decidir qual regra CSS será aplicada quando várias regras tentam estilizar o mesmo elemento. IDs possuem maior especificidade que classes, e classes possuem maior especificidade que seletores de elementos.</p>
+        <p>Outro conceito importante foi <b>inheritance (herança)</b>. Algumas propriedades CSS, principalmente relacionadas a texto, são herdadas automaticamente pelos elementos filhos. Propriedades como <b>color</b> e <b>font-family</b> normalmente herdam, enquanto propriedades de layout como <b>margin</b>, <b>padding</b> e <b>border</b> geralmente não herdam.</p>
+        <p>Na parte de cores, o capítulo explicou propriedades como:</p>
+          <ul>
+            <li>color (cor do texto);</li>
+            <li>background-color (cor do fundo)</li>
+          </ul>
+        <p>Também foram apresentados diferentes formatos de cores:</p>
+          <ul>
+            <li>nomes de cores (red, blue);</li>
+            <li>hexadecimal (#ff0000);</li>
+            <li>RGB (rgb(255,0,0));</li>
+            <li>RGBA (rgba(255,0,0,0.5)), que adiciona transparência.</li>
+          </ul>
+        <p>A seção sobre textos mostrou propriedades usadas para estilização tipográfica:</p>
+          <ul>
+            <li>font-family = Define o tipo da fonte;</li>
+            <li>font-size = Define o tamanho da fonte;</li>
+            <li>font-weight = Define a espessura da fonte (<b>negrito</b>);</li>
+            <li>font-style = Define o estilo da fonte (<i>itálico</i>, oblique);</li>
+            <li>text-align = Define o alinhamento horizontal do texto;</li>
+            <li>text-decoration = Adiciona decorações ao texto (underline, line-through);</li>
+            <li>text-transform = Transforma o texto (maiúsculo, minúsculo, capitalize);</li>
+            <li>line-height = Define o espaçamento entre linhas de um texto.</li>
+          </ul>
+        <p>O capítulo também abordou estilização de listas usando propriedades como:</p>
+          <ul>
+            <li>list-style-type = Define o bullet da lista;</li>
+            <li>list-style-position = Define a posição do bullet;</li>
+            <li>list-style-image = Define imagens como bullet;</li>
+            <li>list-style = Uma <b>shorthand property</b>, ela dar a possibilidade de colocar todas as propriedades de listas mencionadas até agora em uma única linha.
+          </ul>
+        <p>Foi mostrado que listas podem ser usadas tanto para conteúdo comum quanto para menus de navegação.</p>
+        <p>Por fim, o capítulo introduziu os diferentes <b>layout systems</b> do CSS. Antigamente, tabelas eram usadas incorretamente para posicionar elementos na página. Com a evolução do CSS, surgiram sistemas específicos para layout:</p>
+          <ul>
+            <li>normal flow;</li>
+            <li>float;</li>
+            <li>positioning;</li>
+            <li>Flexbox;</li>
+            <li>CSS Grid.</li>
+          </ul>
+        <p>O Flexbox é utilizado principalmente para alinhamento e distribuição de elementos em uma única direção (linha ou coluna), enquanto o CSS Grid trabalha com linhas e colunas simultaneamente, permitindo layouts bidimensionais mais complexos.</p>
+      </section>
+    </main>
+  </body>
+</html>
