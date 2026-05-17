@@ -1,0 +1,45 @@
+body {font-family: Times New Roman;
+      background-color: #009B3A;
+     }
+
+h1 {font-size: 35px;
+    text-align: center;
+    color: #FFDF00;
+   }
+
+p {color: #FFFFFF;
+   font-size: 17px;
+   text-align: justify;
+  }
+
+ul {list-style-type: square;
+   color: #FFFFFF
+   }
+
+.exemplo {font-family: Arial;
+          color: #FFDF00;
+         }
+
+p::before {
+      content: "👉🏾";
+    }
+
+table { margin: auto;
+        border-width: 3px;
+        border-style: solid;
+        border-color: #FFFFFF;
+        border-collapse: collapse;
+      }
+
+th, td { padding: 11px;
+         border-width: 2px;
+         border-style: solid;
+         background-color: #0D47A1;
+         color: #FFFFFF;
+         text-align: justify:
+       }
+
+.gif_final {
+    display: block;
+    margin: auto;
+}
